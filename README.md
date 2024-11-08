@@ -1,29 +1,36 @@
-# Project Title
+# Hikayat Allam
 
-A short description about the project and/or client.
+Hikayat Allam is an interactive educational platform that generates customized stories for children, designed to enhance reading fluency, enrich vocabulary, and encourage positive habits. The platform uses AI to provide engaging, child-friendly content that addresses specific behavioral challenges in a soft and effective way.
+
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+These instructions will help you set up a local copy of the project for development and testing purposes. See the Deployment section for notes on how to deploy the project on a live system.
+
 
 ### Prerequisites
 
-The things you need before installing the software.
+Ensure you have the following installed:
 
-* You need this
-* And you need this
-* Oh, and don't forget this
+Python 3.8+
+Required Python libraries (specified in requirements.txt)
 
 ### Installation
 
-A step by step guide that will tell you how to get the development environment up and running.
+Follow these steps to get the development environment up and running:
 
+Clone the repository:
+```
+$ git clone https://github.com/yourusername/Hikayat.git
+$ cd Hikayat
+
+```
+Clone the repository:
 ```
 $ First step
 $ Another step
 $ Final step
 ```
-
 ## Usage
 
 A few examples of useful commands and/or tasks.
