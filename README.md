@@ -2,8 +2,7 @@
   <br>
   <a href="https://allamstories.tech/"><img src="https://allamstories.tech/website_image.png" alt="حِكايات علّام" width="200"></a>
   <br>
-  Markdownify
-  <br>
+حِكايات علّام  <br>
 </h1>
 <h4 align="center">A minimal Markdown Editor desktop app built on top of <a href="http://electron.atom.io" target="_blank">Electron</a>.</h4>
 # Hikayat Allam
