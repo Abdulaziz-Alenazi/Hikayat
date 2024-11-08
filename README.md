@@ -23,14 +23,29 @@ Clone the repository:
 ```
 $ git clone https://github.com/yourusername/Hikayat.git
 $ cd Hikayat
+```
+Install dependencies:
+```
+$ pip install -r requirements.txt
+```
+Install dependencies:
+```
+$ pip install -r requirements.txt
+```
+Start the backend server (Flask):
+```
+$ cd Hikayat Project
+$ python app.py
+```
+Start the frontend server using XAMPP:
 
-```
-Clone the repository:
-```
-$ First step
-$ Another step
-$ Final step
-```
+Open XAMPP Control Panel and start Apache.
+Copy the contents of the Hikayat Website folder to the htdocs directory in your XAMPP installation (usually C:\xampp\htdocs\ on Windows).
+Open your browser and go to http://localhost/Hikayat-Website to access the frontend.
+
+Access the application: 
+Open your web browser and go to http://localhost/Hikayat-Website for the frontend and http://localhost:5009 for the backend.
+
 ## Usage
 
 A few examples of useful commands and/or tasks.
