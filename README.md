@@ -5,7 +5,6 @@
 حِكايات علّام  <br>
 </h1>
 <h4 align="center">A minimal Markdown Editor desktop app built on top of <a href="http://electron.atom.io" target="_blank">Electron</a>.</h4>
-# Hikayat Allam
 
 Hikayat Allam is an interactive educational platform that generates customized stories for children, designed to enhance reading fluency, enrich vocabulary, and encourage positive habits. The platform uses AI to provide engaging, child-friendly content that addresses specific behavioral challenges in a soft and effective way.
 
