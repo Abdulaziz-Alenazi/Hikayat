@@ -27,7 +27,7 @@ Ensure you have the following installed:
 Python 3.8+
 Required Python libraries (specified in requirements.txt)
 
-##Project Structure
+## Project Structure
 
 #### Hikayat Project
 The **Hikayat Project** folder contains the entire Python codebase for generating stories, images, and audio files.
@@ -47,7 +47,7 @@ Frontend Design: HTML, CSS, and JavaScript files for a child-friendly and intera
 Integration with Backend: PHP code that communicates with the backend server (Flask API) to fetch and display generated stories, images, and audio.
 
 
-### Installation & Deployment
+## Installation & Deployment
 
 Follow these steps to get the development environment up and running:
 
