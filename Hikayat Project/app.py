@@ -1,3 +1,5 @@
+#import required libraries 
+
 import requests
 from flask import Flask, request, jsonify, render_template_string, send_from_directory
 from access import generate_token
@@ -5,7 +7,6 @@ from access import generate_token
 import base64
 import requests
 import os
-import matplotlib.pyplot as plt
 import base64
 from io import BytesIO
 import numpy as np
@@ -21,10 +22,12 @@ import os
 import random
 
 
-
+# generate IBM token key
 access_token = generate_token()
 
 app = Flask(__name__)
+
+#generate a story from Allam model using API
 
 def Generate_Story(Habit):
     url = "https://eu-de.ml.cloud.ibm.com/ml/v1/text/generation?version=2023-05-29"
@@ -110,8 +113,7 @@ def Generate_Story(Habit):
 
 
 from deep_translator import GoogleTranslator
-
-
+# Translate from Arabic to English
 def translate_ar_to_en(text):
     translator = GoogleTranslator(source='auto', target='en')
     translation = translator.translate(text)
@@ -122,6 +124,7 @@ def translate_ar_to_en(text):
 api_key = 'sk-X88DFYHsgjkzKOp1twOETCftP3mCoZ2jAAzl66BMJZVBKQ0K'
 url = "https://api.stability.ai/v1/generation/stable-diffusion-xl-1024-v1-0/text-to-image"
 
+# Generate images from Satbility using API
 def generate_image(prompt):
     prompt_en = translate_ar_to_en(prompt)
 
@@ -163,35 +166,34 @@ def generate_image(prompt):
     data = response.json()
 
 
-    # make sure the out directory exists
+    # make sure the image directory exists
     if not os.path.exists("/var/www/html/image"):
       os.makedirs("/var/www/html/image")
 
     for i, image in enumerate(data["artifacts"]):
       name = image["seed"]
       with open(f'/var/www/html/image/{name}.png', "wb") as f:
-          # print(name)
           image_data = base64.b64decode(image["base64"])
           f.write(image_data)
-        
+    #images will be save on Hikayat Allam server
           return f'https://Allamstories.tech/image/{name}.png'
     
-
+# Convert text to speech using ElevenLabs using API
 def text_to_speech_stream(text: str):
-    ELEVENLABS_API_KEY = 'sk_06bd26967229a0897ca4f8252fa78e4f05f194a86dd9de91'  # Replace with your actual API key
+    ELEVENLABS_API_KEY = 'sk_06bd26967229a0897ca4f8252fa78e4f05f194a86dd9de91' 
     client = ElevenLabs(
         api_key=ELEVENLABS_API_KEY,
     )
 
     response = client.text_to_speech.convert(
-    voice_id="Xb7hH8MSUJpSbSDYk0k2",  # Alice's voice ID
+    voice_id="Xb7hH8MSUJpSbSDYk0k2",
     optimize_streaming_latency="0",
     output_format="mp3_22050_32",
     text=text,
     model_id="eleven_multilingual_v2",
     voice_settings=VoiceSettings(
-        stability=0.75,          # Increased stability for consistent output
-        similarity_boost=0.75,   # Moderate similarity boost
+        stability=0.75,         
+        similarity_boost=0.75,  
         style=0.0,
         use_speaker_boost=True,
         ),
@@ -207,21 +209,22 @@ def text_to_speech_stream(text: str):
 
     sound = AudioSegment.from_file(audio_data, format="mp3")
 
-    print(sound)
+    # make sure the image directory exists
     if not os.path.exists("/var/www/html/audio"):
         os.makedirs("/var/www/html/audio")
         
     name = name = random.randint(1000, 999999)
-#     print(name)
     output_filename = f"{name}.mp3"
     print(output_filename)
     sound.export(f'/var/www/html/audio/{output_filename}', format="mp3")
-
+    #Audio will be save on Hikayat Allam server
     return f'https://Allamstories.tech/audio/{output_filename}'
 
+# Splite statment to sentences
 def splite(statment):
     return statment.split('.')
 
+# make a json content stories, images and audio files.
 def Generate_Images(story):
     json = {}
 
@@ -242,15 +245,15 @@ def Generate_Images(story):
 #////////////////
 
 
+#Flask view function that retrieves and serves an image file stored in a specific directory on the server.
 @app.route('/out/<path:filename>')
 def serve_image(filename):
-    # Set the path to the directory where images are stored
     image_directory = '/home/ubuntu/Allam/mysite/out'
-    # Ensure the filename is safe to use
     return send_from_directory(image_directory, filename)
 
 
 
+# Flask route to generate a story based on a specific habit and then create an image and audio related to that story.
 @app.route('/generate_story_image', methods=['POST'])
 def Json_Story_Image():
     habit = request.form.get('habit')
@@ -284,4 +287,3 @@ def index():
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5009)
-
