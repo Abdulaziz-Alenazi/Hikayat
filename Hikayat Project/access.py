@@ -1,6 +1,8 @@
+# Import IBM libraries
 from ibm_cloud_sdk_core.authenticators import IAMAuthenticator
 from ibm_watson import IAMTokenManager
 
+# Generate IBM access token
 def generate_token():
     authenticator = IAMAuthenticator('myapikey')
 
