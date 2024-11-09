@@ -12,7 +12,7 @@ Hikayat Allam is an interactive educational platform that generates customized s
 
 
 
-<video src="https://youtu.be/hzlBf5wJ5Ks" width="600" autoplay loop></video>
+<video src="https://allamstories.tech/Hikayat_Allam.mov" width="600" autoplay loop></video>
 
 
 ## Getting Started
