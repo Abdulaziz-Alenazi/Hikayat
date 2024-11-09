@@ -58,8 +58,24 @@ Open your web browser and go to http://localhost/Hikayat-Website for the fronten
 ## Team
 
 
-| [<img src="https://i.ibb.co/xHKQHDB/1727261272909.jpg" width="100px;"/><sub><b>Abdulaziz Alenazi</b></sub>](https://www.linkedin.com/in/abdulaziz-alenazi/)       | [<img src="https://i.ibb.co/GPHTxyf/1726649618248.jpg" width="100px;"/><br /><sub><b>Badr Alenazi</b></sub>](https://www.linkedin.com/in/badralanazix/)<br />
-
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://www.linkedin.com/in/abdulaziz-alenazi/">
+        <img src="https://i.ibb.co/xHKQHDB/1727261272909.jpg" width="100px" alt="Abdulaziz Alenazi"/>
+        <br />
+        <sub><b>Abdulaziz Alenazi</b></sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://www.linkedin.com/in/badralanazix/">
+        <img src="https://i.ibb.co/GPHTxyf/1726649618248.jpg" width="100px" alt="Badr Alenazi"/>
+        <br />
+        <sub><b>Badr Alenazi</b></sub>
+      </a>
+    </td>
+  </tr>
+</table>
 
 
 
