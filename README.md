@@ -6,7 +6,7 @@
 </h1>
 <h4 align="center">قصص تفاعلية تُنمي الإيجابية وتُعالج العادات السلبية بأسلوب ممتع وجذاب للأطفال <a href="https://allamstories.tech" target="_blank">هُنا في موقعنا</a>.</h4>
 
-<video src="https://drive.google.com/file/d/1DMh8CZq7ZsQ79G6_x9UuY6QWMfuu3kSZ/view" width="600" autoplay loop></video>
+<video src="https://allamstories.tech/Hikayat_Allam.mp4" width="600" autoplay loop></video>
 
 Hikayat Allam is an interactive educational platform that generates customized stories for children, designed to enhance reading fluency, enrich vocabulary, and encourage positive habits. The platform uses AI to provide engaging, child-friendly content that addresses specific behavioral challenges in a soft and effective way.
 
