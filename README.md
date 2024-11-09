@@ -11,6 +11,10 @@
 Hikayat Allam is an interactive educational platform that generates customized stories for children, designed to enhance reading fluency, enrich vocabulary, and encourage positive habits. The platform uses AI to provide engaging, child-friendly content that addresses specific behavioral challenges in a soft and effective way.
 
 
+
+Uploading Hikayat_Allam.mp4…
+
+
 ## Getting Started
 
 These instructions will help you set up a local copy of the project for development and testing purposes. See the Deployment section for notes on how to deploy the project on a live system.
