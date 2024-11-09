@@ -20,14 +20,14 @@ Hikayat Allam is an interactive educational platform that generates customized s
 These instructions will help you set up a local copy of the project for development and testing purposes. See the Deployment section for notes on how to deploy the project on a live system.
 
 
-### Prerequisites
+## Prerequisites
 
 Ensure you have the following installed:
 
 Python 3.8+
 Required Python libraries (specified in requirements.txt)
 
-### Project Structure
+##Project Structure
 
 #### Hikayat Project
 The **Hikayat Project** folder contains the entire Python codebase for generating stories, images, and audio files.
