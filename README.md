@@ -60,7 +60,7 @@ Open your web browser and go to http://localhost/Hikayat-Website for the fronten
 [![Abdulaziz Alenazi](https://i.ibb.co/xHKQHDB/1727261272909.jpg)](https://www.linkedin.com/in/abdulaziz-alenazi/)  | [![Badr Alenazi](https://i.ibb.co/GPHTxyf/1726649618248.jpg)](https://www.linkedin.com/in/badralanazix/)
 [Abdulaziz Alenazi](https://www.linkedin.com/in/abdulaziz-alenazi/) |[Badr Alenazi](https://www.linkedin.com/in/badralanazix/)
 
-| [<img src="https://avatars3.githubusercontent.com/u/3171900?v=3" width="100px;"/><br /><sub><b>Juan Herrera</b></sub>](http://juandavidherrera.com/en)<br />        | [<img src="https://avatars0.githubusercontent.com/u/464978?v=3" width="100px;"/><br /><sub><b>Alejandro Ñáñez</b></sub>](http://co.linkedin.com/in/alejandronanez/)<br />
+| [<img src="https://i.ibb.co/xHKQHDB/1727261272909.jpg" width="100px;"/><br /><sub><b>Abdulaziz Alenazi</b></sub>](https://www.linkedin.com/in/abdulaziz-alenazi/)       | [<img src="https://i.ibb.co/GPHTxyf/1726649618248.jpg" width="100px;"/><br /><sub><b>Badr Alenazi</b></sub>](https://www.linkedin.com/in/badralanazix/)<br />
 
 
 
