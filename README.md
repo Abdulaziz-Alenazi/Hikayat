@@ -78,4 +78,5 @@ Open your web browser and go to http://localhost/Hikayat-Website for the fronten
 </table>
 
 
+<video src="https://allamstories.tech/Hikayat_Allam.mp4" width="600" autoplay loop muted></video>
 
